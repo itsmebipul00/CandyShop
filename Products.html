@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://nextui.netlify.app/docs.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <script defer src="https://nextui.netlify.app/docs.js"></script>
+    <script defer src="https://kit.fontawesome.com/8c1231c9b8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="heading-container d-grid">
+            <h1 class="header-title letter-spacing-2 fs-700">CandyShop</h1>
+            <p class="header-subtitle fs-400 letter-spacing-4 text-red">For the love of candies</p>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+              aria-expanded="false">Menu</span></button>
+          <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-4" role="list">
+                <li><a href="#"><span aria-hidden="true">Buy Candy</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Merchandise</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Gift Boxes</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Profile</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Sign Up</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Login</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main-container d-flex">
+        <aside>
+            <section class="aside-heading d-flex">
+                <h2 class="fs-500 filter-title">Filters</h2>
+                <button class="btn btn-filter">Reset</button>
+            </section>
+            <ul id="secondary-navigation"  class="secondary-navigation uppercase fs-300 letter-spacing-5" role="list">
+                
+                <li class="f-col gap-5rem no-wrap">Price : 
+                    <span>
+                        <input type="radio">
+                        <label for="">High to low</label>
+                    </span>
+                    <span>
+                        <input type="radio">
+                        <label for="">Low to high</label>
+                    </span> 
+                </li>
+
+                <li class="f-col gap-5rem no-wrap">Categories : 
+                    <span>
+                        <input type="checkbox" id="marshmello">
+                        <label for="marshmello">Marshmello</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="chocolates">
+                        <label for="chocolates">Chocolates</label>
+                    </span> 
+                    <span>
+                        <input type="checkbox" id="dark-chocolate">
+                        <label for="dark-chocolate">Dark-Chocolates</label>
+                    </span> 
+                    <span>
+                        <input type="checkbox" id="fizzy">
+                        <label for="fizzy">Fizzy</label>
+                    </span> 
+                    <span>
+                        <input type="checkbox" id="gummies">
+                        <label for="gummies">Gummies</label>
+                    </span> 
+                    <span>
+                        <input type="checkbox" id="jellies">
+                        <label for="jellies">Jellies</label>
+                    </span>                     <span>
+                        <input type="checkbox" id="lollipop">
+                        <label for="lollipop">Lollipops</label>
+                    </span>                     <span>
+                        <input type="checkbox" id="rasberry">
+                        <label for="rasberry">Rasberry</label>
+                    </span>                    
+                </li>
+
+                <li>
+                    Rating:
+                    <div class="slider-container">
+                      <input type="range" class="slider" min="0" max="100" step="1">
+                    </div>
+                    <p class="percentage"></p>
+                </li>
+            </ul>
+        </aside>
+          <section class="product-grid products-section-container product-grid">
+            <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn btn-addtocart uppercase">Add to cart</button>
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    </div>  
+                </div>
+              </div>
+              <div class="card stacked">
+
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    </div>  
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    </div>  
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    </div>  
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    </div>  
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    </div>  
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+              
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                     
+                </div>
+              </div>
+          </section>
+      </main>
+</body>
+</html>
