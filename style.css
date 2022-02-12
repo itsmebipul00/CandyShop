@@ -4,9 +4,31 @@ img {
   aspect-ratio: 0;
 }
 
+/* to library */
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.g-3l-2m-1sm {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 60em) {
+  .g-3l-2m-1sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 40em) {
+  .g-3l-2m-1sm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /* HOMEPAGE */
 .heading-container {
-  padding: 1rem 2rem;
+  padding: 0.5rem 0 2rem 0;
   grid-template-rows: min-content 1fr;
   grid-template-areas: "header-title nav";
 }
@@ -100,20 +122,4 @@ nav {
 
 .bg-image-Lollipops {
   background-image: url(./images/lollipops.jpg);
-}
-
-.g-3l-2m-1sm {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-@media (max-width: 60em) {
-  .g-3l-2m-1sm {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 40em) {
-  .g-3l-2m-1sm {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
