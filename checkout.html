@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartPage</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://nextui.netlify.app/docs.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://nextui.netlify.app/docs.js"></script>
+    <script defer src="https://kit.fontawesome.com/8c1231c9b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="heading-container d-grid">
+            <h1 class="header-title letter-spacing-2 fs-700">CandyShop</h1>
+            <p class="header-subtitle fs-400 letter-spacing-4 text-red">For the love of candies</p>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+              aria-expanded="false">Menu</span></button>
+          <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-4" role="list">
+                <li><a href="#"><span aria-hidden="true">Buy Candy</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Merchandise</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Gift Boxes</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Profile</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Sign Up</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Login</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="cart">
+        <h2 class="fs-600">SHOPPING CART</h2>
+        <div class="cart-details">
+          
+                <section class="cart-product-details">
+                    <img class="product-cart-image" src="./images/marshmello.jpg"/>
+                    <h3 class="product-cart-name fs-450">Marshmello</h3>
+                    <p class="product-cart-price fw-500">Price: <span>$1000</span></p>
+                    <div class="select-cart-qty">
+                        <select class="select-cart-dropdown" value="product-qty">
+                                <option class="quantity-cart-option" key="1" value="1">1</option>
+                                <option class="quantity-cart-option" key="2" value="2">2</option>
+                                <option class="quantity-cart-option" key="3" value="3">3</option>
+                                <option class="quantity-cart-option" key="4" value="4">4</option>
+                                <option class="quantity-cart-option" key="5" value="5">5</option>
+
+                        </select>
+                    </div>
+                   
+                        <button class="btn btn-delete flex">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                  
+                </section>
+        
+            <section class="cart-total flex">
+                <p class="cart-price fs-450 fw-500 uppercase">
+                    Total: <span>$500</span> 
+                </p>
+                <button 
+                    class="btn btn-checkout fs-450 fw-500 uppercase"
+                    type="button">
+                    Checkout
+                </button>
+            </section>
+        </div>
+      </main>
+        
+ 
+</body>
+</html>
