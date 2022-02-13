@@ -32,7 +32,7 @@
 }
 
 .cart-total > * {
-  border: 5px solid black;
+  border: 5px solid hsl(var(--clr-dark));
   padding: 0.5rem;
 }
 
@@ -49,7 +49,7 @@
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "product-image product-name product-price select-qty btn-trash";
+    grid-template-areas: "product-image product-name product-price select-qty btn-delete";
   }
 
   .cart-details {
@@ -74,8 +74,9 @@
     grid-area: select-qty;
   }
 
-  .btn-trash {
-    grid-area: btn-trash;
+  .btn-delete {
+    grid-area: btn-delete;
+    align-self: flex-start;
   }
 
   .cart-total {
