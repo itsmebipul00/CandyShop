@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  align-items: center;
+}
+.form-login {
+  width: 40%;
+  margin: 0 auto;
+}
+.already-done {
+  margin-top: 0.5rem;
+}
+@media (max-width: 60em) {
+  .form-login {
+    width: 60%;
+  }
+}
+@media (max-width: 40em) {
+  .form-login {
+    width: 80%;
+  }
+}
+
+i {
+  inset: 20% 0% 0% 95%;
+}

@@ -60,7 +60,7 @@
     margin: 1rem;
     width: 70%;
     display: grid;
-    gap: 0.5rem;
+    gap: 1rem;
     grid-template-columns: repeat(5, 1fr);
   }
 
