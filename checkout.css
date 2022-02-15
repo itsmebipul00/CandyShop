@@ -1,3 +1,7 @@
+.btn:hover {
+  transform: scale(0);
+}
+
 .cart {
   margin: 2rem;
 }
@@ -40,6 +44,15 @@
   width: 100%;
 }
 
+.btn-checkout:hover {
+  transform: scale(1);
+}
+
+.btn-delete:hover {
+  transform: scale(1);
+  background: hsl(var(--clr-light));
+}
+
 @media (min-width: 60em) {
   .cart-product-details {
     background: hsl(var(--clr-white));
@@ -49,7 +62,6 @@
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "product-image product-name product-price select-qty btn-delete";
   }
 
   .cart-details {
@@ -57,25 +69,11 @@
   }
 
   .product-cart-image {
-    grid-area: product-image;
     height: 100%;
     aspect-ratio: 1;
   }
 
-  .product-cart-name {
-    grid-area: product-name;
-  }
-
-  .product-cart-price {
-    grid-area: product-price;
-  }
-
-  .select-cart-qty {
-    grid-area: select-qty;
-  }
-
   .btn-delete {
-    grid-area: btn-delete;
     align-self: flex-start;
   }
 

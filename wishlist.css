@@ -1,0 +1,12 @@
+.wishlist-heading {
+  margin: 2rem;
+}
+
+path {
+  fill: hsl(var(--clr-red));
+  opacity: 1;
+}
+
+.whishlist-section-container {
+  padding: 0 5rem;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://nextui.netlify.app/docs.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="wishlist.css">
     <script defer src="https://nextui.netlify.app/docs.js"></script>
     <script defer src="https://kit.fontawesome.com/8c1231c9b8.js" crossorigin="anonymous"></script>
 
@@ -31,68 +32,11 @@
           </nav>
         </div>
       </header>
-      <main class="main-container d-flex">
-        <aside>
-            <section class="aside-heading d-flex">
-                <h2 class="fs-500 filter-title">Filters</h2>
-                <button class="btn btn-filter">Reset</button>
-            </section>
-            <ul id="secondary-navigation"  class="secondary-navigation uppercase fs-300 letter-spacing-5" role="list">
-                
-                <li class="f-col gap-5rem no-wrap">Price : 
-                    <span>
-                        <input type="radio">
-                        <label for="">High to low</label>
-                    </span>
-                    <span>
-                        <input type="radio">
-                        <label for="">Low to high</label>
-                    </span> 
-                </li>
+      <main class="main-container">
+        <h2 class="wishlist-heading uppercase letter-spacing-4 fs-600">WishList</h2>
 
-                <li class="f-col gap-5rem no-wrap">Categories : 
-                    <span>
-                        <input type="checkbox" id="marshmello">
-                        <label for="marshmello">Marshmello</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" id="chocolates">
-                        <label for="chocolates">Chocolates</label>
-                    </span> 
-                    <span>
-                        <input type="checkbox" id="dark-chocolate">
-                        <label for="dark-chocolate">Dark-Chocolates</label>
-                    </span> 
-                    <span>
-                        <input type="checkbox" id="fizzy">
-                        <label for="fizzy">Fizzy</label>
-                    </span> 
-                    <span>
-                        <input type="checkbox" id="gummies">
-                        <label for="gummies">Gummies</label>
-                    </span> 
-                    <span>
-                        <input type="checkbox" id="jellies">
-                        <label for="jellies">Jellies</label>
-                    </span>                     <span>
-                        <input type="checkbox" id="lollipop">
-                        <label for="lollipop">Lollipops</label>
-                    </span>                     <span>
-                        <input type="checkbox" id="rasberry">
-                        <label for="rasberry">Rasberry</label>
-                    </span>                    
-                </li>
+          <section class="product-grid whishlist-section-container">
 
-                <li>
-                    Rating:
-                    <div class="slider-container">
-                      <input type="range" class="slider" min="0" max="100" step="1">
-                    </div>
-                    <p class="percentage"></p>
-                </li>
-            </ul>
-        </aside>
-          <section class="product-grid products-section-container product-grid">
             <div class="card stacked">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn btn-addtocart uppercase">Add to cart</button>
@@ -101,11 +45,14 @@
                         <h3 class="card__title">Marshmello</h3>
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
-                    
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+               
+             
                 </div>
-              </div>
+            </div>
+
               <div class="card stacked">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
@@ -115,8 +62,10 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                   
                 </div>
               </div>
               <div class="card stacked">
@@ -129,8 +78,10 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                
                 </div>
               </div>
               <div class="card stacked">
@@ -142,22 +93,10 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
-                </div>
-              </div>
-              <div class="card stacked">
-                <img src="images/candy-1.jpg" alt="" class="card__img">
-                <button class="btn uppercase btn-addtocart">Add to cart</button>
-
-                <div class="card__content d-flex">
-                    <div>
-                        <h3 class="card__title">Marshmello</h3>
-                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
-                    </div>
-                    
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+             
                 </div>
               </div>
               <div class="card stacked">
@@ -170,8 +109,10 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+          
                 </div>
               </div>
               <div class="card stacked">
@@ -184,7 +125,25 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+          
+                </div>
+              </div>
+              <div class="card stacked">
+                <img src="images/candy-1.jpg" alt="" class="card__img">
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
+
+                <div class="card__content d-flex">
+                    <div>
+                        <h3 class="card__title">Marshmello</h3>
+                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                    </div>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
                 
                 </div>
               </div>
@@ -198,7 +157,9 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
               
                 </div>
               </div>
@@ -212,8 +173,9 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
                 </div>
               </div>
               <div class="card stacked">
@@ -226,7 +188,9 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
                     
                 </div>
               </div>
@@ -240,7 +204,9 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
                     
                 </div>
               </div>
@@ -254,7 +220,9 @@
                         <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
                     </div>
                     
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart-fill margin-left-auto" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
                      
                 </div>
               </div>
