@@ -27,6 +27,10 @@ i {
   inset: 20% 0% 0% 90%;
 }
 
+::-ms-reveal {
+  display: none !important;
+}
+
 header {
   padding: 1rem;
 }
