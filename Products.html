@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://nextui.netlify.app/docs.css">
+    <link rel="stylesheet" href="https://nextui.netlify.app/nextui.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="products.css">
     <script defer src="https://nextui.netlify.app/docs.js"></script>
@@ -21,12 +21,12 @@
               aria-expanded="false">Menu</span></button>
           <nav>
             <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-4" role="list">
-                <li><a href="#"><span aria-hidden="true">Buy Candy</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Merchandise</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Gift Boxes</span></a></li>
+                <li><a href="./Products.html"><span aria-hidden="true">Buy Candies</span></a></li>
+                <li><a href="./wishlist.html"><span aria-hidden="true">WishList</span></a></li>
+                <li><a href="./checkout.html"><span aria-hidden="true">Cart</span></a></li>
                 <li><a href="#"><span aria-hidden="true">Profile</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Sign Up</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Login</span></a></li>
+                <li><a href="./signup.html"><span aria-hidden="true">Sign Up</span></a></li>
+                <li><a href="./login.html"><span aria-hidden="true">Login</span></a></li>
             </ul>
           </nav>
         </div>
@@ -83,19 +83,61 @@
                     </span>                    
                 </li>
 
-                <li>
+                <li class="f-col gap-5rem no-wrap">
                     Rating:
-                    <div class="slider-container">
-                      <input type="range" class="slider" min="0" max="100" step="1">
-                    </div>
-                    <p class="percentage"></p>
+                    <span>
+                        <input type="checkbox" id="five-stars">
+                        <label for="five-stars">5 Stars</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="four-stars">
+                        <label for="four-stars">4 Stars and above</label>
+                    </span> 
+                    <span>
+                        <input type="checkbox" id="three-stars">
+                        <label for="three-stars">3 Stars and above</label>
+                    </span> 
+                    <span>
+                        <input type="checkbox" id="two-stars">
+                        <label for="two-stars">2 Stars and above</label>
+                    </span> 
+                    <span>
+                        <input type="checkbox" id="one-star">
+                        <label for="one-star">1 Star and above</label>
+                    </span>
                 </li>
             </ul>
         </aside>
           <section class="product-grid products-section-container product-grid">
-            <div class="card stacked">
+
+                <a class="card d-grid grid-stacked" href="./Product.html" >
+                    <img src="images/candy-1.jpg" alt="" class="card__img">
+                    <button class="btn btn-addtocart uppercase">Add to cart</button>
+                    <div class="card__content d-flex">
+                        <div>
+                            <h3 class="card__title">Marshmello</h3>
+                            <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                        </div>
+                        
+                            <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    </div>  
+                </a>
+
+                <a class="card d-grid grid-stacked" href="./Product.html">
+                    <img src="images/candy-1.jpg" alt="" class="card__img">
+                    <button class="btn uppercase btn-addtocart">Add to cart</button>
+                    <div class="card__content d-flex">
+                        <div>
+                            <h3 class="card__title">Marshmello</h3>
+                            <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
+                        </div>
+                            <i class="far fa-heart fa-2x margin-left-auto"></i>
+                    </div>  
+                </a>
+
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
-                <button class="btn btn-addtocart uppercase">Add to cart</button>
+                <button class="btn uppercase btn-addtocart">Add to cart</button>
                 <div class="card__content d-flex">
                     <div>
                         <h3 class="card__title">Marshmello</h3>
@@ -103,10 +145,10 @@
                     </div>
                     
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
-                </div>
-              </div>
-              <div class="card stacked">
+                </div>  
+              </a>
+
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
                 <div class="card__content d-flex">
@@ -117,9 +159,9 @@
                     
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
                     </div>  
-                </div>
-              </div>
-              <div class="card stacked">
+                </a>
+
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
 
@@ -131,22 +173,9 @@
                     
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
                     </div>  
-                </div>
-              </div>
-              <div class="card stacked">
-                <img src="images/candy-1.jpg" alt="" class="card__img">
-                <button class="btn uppercase btn-addtocart">Add to cart</button>
-                <div class="card__content d-flex">
-                    <div>
-                        <h3 class="card__title">Marshmello</h3>
-                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
-                    </div>
-                    
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
-                </div>
-              </div>
-              <div class="card stacked">
+                </a>
+
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
 
@@ -158,23 +187,9 @@
                     
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
                     </div>  
-                </div>
-              </div>
-              <div class="card stacked">
-                <img src="images/candy-1.jpg" alt="" class="card__img">
-                <button class="btn uppercase btn-addtocart">Add to cart</button>
-
-                <div class="card__content d-flex">
-                    <div>
-                        <h3 class="card__title">Marshmello</h3>
-                        <p class="card__price"><span class="line-through text-dark-70 fw-200 original-price">$345</span>$50</p>
-                    </div>
-                    
-                        <i class="far fa-heart fa-2x margin-left-auto"></i>
-                    </div>  
-                </div>
-              </div>
-              <div class="card stacked">
+                </a>
+   
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
 
@@ -187,8 +202,8 @@
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
                 
                 </div>
-              </div>
-              <div class="card stacked">
+              </a>
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
 
@@ -201,8 +216,8 @@
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
               
                 </div>
-              </div>
-              <div class="card stacked">
+              </a>
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
 
@@ -215,8 +230,8 @@
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
                 
                 </div>
-              </div>
-              <div class="card stacked">
+              </a>
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
 
@@ -229,8 +244,8 @@
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
                     
                 </div>
-              </div>
-              <div class="card stacked">
+              </a>
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
 
@@ -243,8 +258,8 @@
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
                     
                 </div>
-              </div>
-              <div class="card stacked">
+              </a>
+              <a class="card d-grid grid-stacked" href="./Product.html">
                 <img src="images/candy-1.jpg" alt="" class="card__img">
                 <button class="btn uppercase btn-addtocart">Add to cart</button>
 
@@ -257,7 +272,7 @@
                         <i class="far fa-heart fa-2x margin-left-auto"></i>
                      
                 </div>
-              </div>
+              </a>
           </section>
       </main>
 </body>

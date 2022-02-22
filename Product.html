@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://nextui.netlify.app/nextui.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <script defer src="https://nextui.netlify.app/docs.js"></script>
+    <script defer src="https://kit.fontawesome.com/8c1231c9b8.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./Product.css">
+</head>
+<body>
+    <header>
+        <div class="heading-container d-grid">
+            <h1 class="header-title letter-spacing-2 fs-700">CandyShop</h1>
+            <p class="header-subtitle fs-400 letter-spacing-4 text-red">For the love of candies</p>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+              aria-expanded="false">Menu</span></button>
+          <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-4" role="list">
+                <li><a href="./Products.html"><span aria-hidden="true">Buy Candies</span></a></li>
+                <li><a href="./wishlist.html"><span aria-hidden="true">WishList</span></a></li>
+                <li><a href="./checkout.html"><span aria-hidden="true">Cart</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Profile</span></a></li>
+                <li><a href="./signup.html"><span aria-hidden="true">Sign Up</span></a></li>
+                <li><a href="./login.html"><span aria-hidden="true">Login</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="card d-flex p-relative">
+            <i class="far fa-heart fa-2x p-absolute"></i>
+            <div class="img-container img-container-width">
+             <img src="./images/candy-1.jpg" alt="" >
+            </div>
+            <div class="card-content card-content-width d-flex f-col">
+              <h3 class="card-title fs-600">Marshmello</h3>
+              <div class="card-body letter-spacing-5">
+                  <span class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>111 Reviews</span>
+                  </span>
+                  <p class="card-description">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempore aut, porro similique deserunt labore rem unde est! Sed, illo!</p>
+
+                </div>
+              <div class="card-footer">
+
+                <p class="card__price fs-500"><strong>PRICE:  </strong><span class="line-through text-dark-70  original-price"> $345</span>$50</p>
+                <button class="btn btn-icon fs-300">
+                    <span class="margin-r-auto">ADD TO CART</span> 
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </button>
+                
+                
+
+              </div>
+            </div>
+        </div>
+      </main>
+</body>
+</html>
