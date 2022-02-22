@@ -1,0 +1,26 @@
+.card {
+  aspect-ratio: unset;
+  margin: 2rem;
+  align-items: center;
+  width: 80%;
+}
+
+.card-description {
+  margin-top: 1rem;
+}
+
+.card-footer > * {
+  margin: 0;
+}
+
+.img-container-width {
+  width: 45%;
+}
+
+.card-content-width {
+  width: 55%;
+}
+
+.card > .fa-heart {
+  inset: 1rem 1rem 1rem 1rem;
+}

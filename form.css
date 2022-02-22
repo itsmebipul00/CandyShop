@@ -34,3 +34,13 @@ i {
 header {
   padding: 1rem;
 }
+
+.remember-me {
+  display: inline;
+  width: fit-content;
+}
+
+.forgot-password {
+  width: fit-content;
+  margin-left: auto;
+}
